@@ -30,8 +30,11 @@ public class LessonFour extends AppCompatActivity {
         final ViewPager viewPager = findViewById(R.id.viewPager4);
 
         PagerAdapter4 pagerAdapter = new PagerAdapter4(getSupportFragmentManager(), tabLayout4.getTabCount());
+        viewPager.setAdapter(pagerAdapter);
 
         viewPager.setAdapter(pagerAdapter);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout4));
+
 
         tabLayout4.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

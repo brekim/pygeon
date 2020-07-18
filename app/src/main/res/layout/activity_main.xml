@@ -8,16 +8,18 @@
     tools:context=".activities.MainActivity">
 
     <!-- Creating the menu here -->
+
     <Button
         android:id="@+id/buttonOne"
         android:layout_width="346dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="77dp"
+        android:background="@drawable/teal_button"
         android:text="Level One: Variables"
         android:textAllCaps="false"
-        android:background="@drawable/teal_button"
         android:textColor="#0da2a6"
+        android:fontFamily="@font/poppinsbold"
     />
 
     <Button
@@ -30,6 +32,7 @@
         android:textAllCaps="false"
         android:background="@drawable/orange_button"
         android:textColor="#f0ad32"
+        android:font="@font/poppinsbold"
     />
 
     <Button
@@ -42,6 +45,7 @@
         android:textAllCaps="false"
         android:background="@drawable/bandana_button"
         android:textColor="#f6163b"
+        android:font="@font/poppinsbold"
     />
 
     <Button
@@ -54,6 +58,7 @@
         android:textAllCaps="false"
         android:background="@drawable/red_button"
         android:textColor="#f6163b"
+        android:font="@font/poppinsbold"
     />
 
     <Button
@@ -66,6 +71,7 @@
         android:textAllCaps="false"
         android:background="@drawable/navy_button"
         android:textColor="#273a6e"
+        android:font="@font/poppinsbold"
     />
 
     <Button
