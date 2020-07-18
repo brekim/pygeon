@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void moveToPageFive() {
-        Intent intent = new Intent(MainActivity.this, LessonFour.class);
+        Intent intent = new Intent(MainActivity.this, LessonFive.class);
         startActivity(intent);
     }
 
