@@ -16,6 +16,9 @@
         android:layout_marginTop="77dp"
         android:text="Level One: Variables"
         android:textAllCaps="false"
+        android:background="@drawable/light_button"
+        android:textColor="#0da2a6"
+
     />
 
     <Button
