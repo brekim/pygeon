@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".QuizActivity">
+
+    <!-- The game/Where the user sees results -->
+    <TextView
+        android:id="@+id/tvQuizCounter"
+        android:text="1/10 HP"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvQuizStatus"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginTop="57dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvQuizQuestion"
+        android:text="#1 Example question about Python!"
+        android:textSize="20sp"
+        android:layout_marginTop="87dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <!-- The dashboard/Where the user should be pressing -->
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_marginTop="307dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option A"
+        android:textAllCaps="false"
+        />
+
+    <!-- Option B -->
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_marginTop="377dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Option B"
+        android:textAllCaps="false"
+        />
+
+    <!-- Option C -->
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_marginTop="447dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Option C"
+        android:textAllCaps="false"
+        />
+
+    <!-- Option D -->
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_marginTop="517dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Option D"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
