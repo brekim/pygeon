@@ -11,13 +11,13 @@
         android:id="@+id/tabBar5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#CDDC39"
+        android:background="#273a6e"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tabIndicatorColor="#3F51B5"
+        app:tabIndicatorColor="#5673c3"
         app:tabIndicatorHeight="3sp"
-        app:tabTextColor="#673AB7">
+        app:tabTextColor="#5673c3">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab1L5"
@@ -48,7 +48,7 @@
         android:id="@+id/viewPager5"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#4CAF50"
+        android:background="#a1b1de"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

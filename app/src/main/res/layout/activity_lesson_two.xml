@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CAF50"
+    android:background="#f0ad32"
     tools:context=".activities.LessonOne">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabBar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#CDDC39"
+        android:background="#f0ad32"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tabIndicatorColor="#3F51B5"
+        app:tabIndicatorColor="#473005"
         app:tabIndicatorHeight="3sp"
-        app:tabTextColor="#673AB7">
+        app:tabTextColor="#473005">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab1L2"
@@ -48,7 +48,7 @@
         android:id="@+id/viewPager2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#4CAF50"
+        android:background="#f6cf88"
         app:layout_constraintBottom_toBottomOf="parent"
 
 
