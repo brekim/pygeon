@@ -1,4 +1,4 @@
-package com.example.pygeon;
+package com.example.pygeon.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 
 import android.view.View;
 import android.widget.Button;
+
+import com.example.pygeon.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
         buttonOne.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                moveToQuiz();
+                moveToPageOne();
             }
         });
     }
 
     //Temporary
-    private void moveToQuiz() {
-        Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+    private void moveToPageOne() {
+        Intent intent = new Intent(MainActivity.this, LessonOne.class);
         startActivity(intent);
     }
 }

@@ -1,14 +1,16 @@
-package com.example.pygeon;
+package com.example.pygeon.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class QuizActivity extends AppCompatActivity {
+import com.example.pygeon.R;
+
+public class LessonThree extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_lesson_three);
     }
 }

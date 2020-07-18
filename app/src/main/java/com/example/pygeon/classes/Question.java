@@ -1,4 +1,4 @@
-package com.example.pygeon;
+package com.example.pygeon.classes;
 
 /*
  * The Q&A data used to teach students Python

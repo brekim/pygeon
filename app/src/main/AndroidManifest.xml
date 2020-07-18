@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuizActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.LessonOne"></activity>
+        <activity android:name=".activities.LessonFive" />
+        <activity android:name=".activities.LessonFour" />
+        <activity android:name=".activities.LessonThree" />
+        <activity android:name=".activities.LessonTwo" />
+        <activity android:name=".activities.QuizActivity" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
