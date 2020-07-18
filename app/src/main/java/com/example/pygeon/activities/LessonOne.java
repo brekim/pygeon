@@ -6,10 +6,10 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.example.pygeon.R;
-import com.example.pygeon.classes.PagerAdapter;
+
+import com.example.pygeon.classes.PagerAdapter1;
 
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
@@ -29,7 +29,7 @@ public class LessonOne extends AppCompatActivity {
         TabItem tab4L1 = findViewById(R.id.tab4L1);
         final ViewPager viewPager = findViewById(R.id.viewPager1);
 
-        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), tabLayout1.getTabCount());
+        PagerAdapter1 pagerAdapter = new PagerAdapter1(getSupportFragmentManager(), tabLayout1.getTabCount());
 
         viewPager.setAdapter(pagerAdapter);
 

@@ -34,11 +34,71 @@ public class MainActivity extends AppCompatActivity {
                 moveToPageOne();
             }
         });
+
+        buttonTwo.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                moveToPageTwo();
+            }
+        });
+
+        buttonThree.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                moveToPageThree();
+            }
+        });
+
+        buttonFour.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                moveToPageFour();
+            }
+        });
+
+        buttonFive.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                moveToPageFive();
+            }
+        });
+
+        buttonCredits.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                moveToCredits();
+            }
+        });
     }
 
-    //Temporary
     private void moveToPageOne() {
         Intent intent = new Intent(MainActivity.this, LessonOne.class);
+        startActivity(intent);
+    }
+
+    private void moveToPageTwo() {
+        Intent intent = new Intent(MainActivity.this, LessonTwo.class);
+        startActivity(intent);
+    }
+
+    private void moveToPageThree() {
+        Intent intent = new Intent(MainActivity.this, LessonThree.class);
+        startActivity(intent);
+    }
+
+    private void moveToPageFour() {
+        Intent intent = new Intent(MainActivity.this, LessonFour.class);
+        startActivity(intent);
+    }
+
+    private void moveToPageFive() {
+        Intent intent = new Intent(MainActivity.this, LessonFour.class);
+        startActivity(intent);
+    }
+
+    //For beta testing... temporarily goes to the quiz
+    private void moveToCredits() {
+        Intent intent = new Intent(MainActivity.this, QuizActivity.class);
         startActivity(intent);
     }
 }
