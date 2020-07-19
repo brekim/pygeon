@@ -40,7 +40,7 @@
     <!-- The dashboard/Where the user should be pressing -->
     <Button
         android:id="@+id/buttonA"
-        android:layout_marginTop="307dp"
+        android:layout_marginTop="377dp"
         android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
     <!-- Option B -->
     <Button
         android:id="@+id/buttonB"
-        android:layout_marginTop="377dp"
+        android:layout_marginTop="447dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -62,7 +62,7 @@
     <!-- Option C -->
     <Button
         android:id="@+id/buttonC"
-        android:layout_marginTop="447dp"
+        android:layout_marginTop="517dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -73,7 +73,7 @@
     <!-- Option D -->
     <Button
         android:id="@+id/buttonD"
-        android:layout_marginTop="517dp"
+        android:layout_marginTop="587dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

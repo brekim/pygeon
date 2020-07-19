@@ -5,8 +5,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="fontFamily">@font/poppinsregular</item>
-        <item name="android:fontFamily">@font/poppinsregular</item>
+        <item name="font">@font/poppinsmedium</item>
+        <item name="fontFamily">@font/poppinsmedium</item>
     </style>
 
 </resources>
