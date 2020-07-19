@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Temporarily goes to quiz
         buttonCredits.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
