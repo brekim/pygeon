@@ -135,11 +135,19 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     public void healDamage() {
-        if (enemyHP != 0) {
+        if (enemyHP <= 12) {
             tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
             tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
             tvQuizStatus.setText("Incorrect! Enemy healed 2 damage.");
             enemyHP += 2;
+        } else if (enemyHP == 15) {
+            tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
+            tvQuizStatus.setText("Incorrect! Enemy is already at max health.");
+        } else {
+            int difference = maxEnemyHP - enemyHP;
+            tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
+            tvQuizStatus.setText("Incorrect! Enemy healed "  + difference + " damage.");
+            enemyHP += difference;
         }
     }
 
