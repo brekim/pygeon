@@ -245,4 +245,5 @@ public class QuizActivity extends AppCompatActivity {
         Intent intent = new Intent(QuizActivity.this, MainActivity.class);
         startActivity(intent);
     }
+
 }
