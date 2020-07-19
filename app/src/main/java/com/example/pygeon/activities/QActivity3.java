@@ -57,7 +57,7 @@ public class QActivity3 extends AppCompatActivity {
         if (enemyHP > 0) {
             //Loads the new question here with the correct data
             final Question quest = questionList.get(i);
-            tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
+            tvQuizCounter.setText("Vera the Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
             tvQuizQuestion.setText(quest.getQuestion());
             buttonA.setText(quest.getA());
             buttonB.setText(quest.getB());
@@ -143,7 +143,7 @@ public class QActivity3 extends AppCompatActivity {
 
     private void takeDamage() {
         if (enemyHP != 0) {
-            tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
+            tvQuizCounter.setText("Vera the Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
             tvQuizStatus.setTextColor(Color.parseColor("#3dcc8e"));
             tvQuizStatus.setText("Correct! Enemy took 3 damage.");
 
@@ -154,7 +154,7 @@ public class QActivity3 extends AppCompatActivity {
     private void healDamage() {
         if (enemyHP != 0) {
             if (enemyHP <= 12) {
-                tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
+                tvQuizCounter.setText("Vera the Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
                 tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
                 tvQuizStatus.setText("Incorrect! Enemy healed 2 damage.");
                 enemyHP += 2;
@@ -172,7 +172,7 @@ public class QActivity3 extends AppCompatActivity {
 
     private void enemyDefeated() {
         enemyHP = 0;
-        tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
+        tvQuizCounter.setText("Vera the Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
         tvQuizStatus.setText("You win!");
 
         /*

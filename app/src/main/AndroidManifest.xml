@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.QActivity5"></activity>
+        <activity android:name=".activities.CreditActivity"></activity>
+        <activity android:name=".activities.QActivity5" />
         <activity android:name=".activities.QActivity4" />
         <activity android:name=".activities.QActivity3" />
         <activity android:name=".activities.QActivity2" />
