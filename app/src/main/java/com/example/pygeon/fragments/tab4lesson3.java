@@ -10,6 +10,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 import com.example.pygeon.R;
+import com.example.pygeon.activities.QActivity3;
 import com.example.pygeon.activities.QuizActivity;
 
 /**
@@ -68,7 +69,7 @@ public class tab4lesson3 extends Fragment {
         btnThreeQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), QuizActivity.class);
+                Intent intent = new Intent(getActivity(), QActivity3.class);
                 startActivity((intent));
             }
         });

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activities.QActivity3">
+
+    <!-- The game/Where the user sees results -->
+    <TextView
+        android:id="@+id/tvQuizCounter"
+        android:text="1/10 HP"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tvQuizStatus"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginTop="57dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvQuizQuestion"
+        android:text="#1 Example question about Python!"
+        android:textSize="20sp"
+        android:layout_marginTop="87dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/buttonVictory"
+        android:text="VICTORY PRIZE"
+        android:textSize="20sp"
+        android:layout_marginTop="87dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+
+    <!-- Images for the fight -->
+    <ImageView
+        android:id="@+id/fox"
+        android:layout_marginTop="187dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/foxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/tealmino"
+        android:layout_marginTop="187dp"
+        android:layout_marginLeft="262dp"
+        android:src="@drawable/tealminotaur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <!-- The dashboard/Where the user should be pressing -->
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_marginTop="327dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option A"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/firenew"
+        />
+
+    <!-- Option B -->
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_marginTop="397dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Option B"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/lightningnew"
+        />
+
+    <!-- Option C -->
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_marginTop="467dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Option C"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/snownew"
+        />
+
+    <!-- Option D -->
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_marginTop="537dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Option D"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/windnew"
+        />
+</RelativeLayout>

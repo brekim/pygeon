@@ -12,11 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.pygeon.classes.Question;
 import com.example.pygeon.R;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class QActivity2 extends AppCompatActivity {
+public class QActivity4 extends AppCompatActivity {
+
     //Control System
     TextView tvQuizCounter, tvQuizQuestion, tvQuizStatus;
     Button buttonA, buttonB, buttonC, buttonD, buttonVictory;
@@ -32,7 +32,7 @@ public class QActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q2);
+        setContentView(R.layout.activity_q3);
 
         //Find view by ID for each TextView
         tvQuizCounter = findViewById(R.id.tvQuizCounter);
@@ -47,7 +47,7 @@ public class QActivity2 extends AppCompatActivity {
         buttonVictory = findViewById(R.id.buttonVictory);
 
         //Load questions and answers into the application
-        load(2);
+        load(4);
         index = 0;
 
         loadQuestions(index);
@@ -119,7 +119,7 @@ public class QActivity2 extends AppCompatActivity {
             buttonVictory.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    moveToAwardTwo();
+                    moveToAwardFour();
                 }
             });
         } else {
@@ -242,9 +242,8 @@ public class QActivity2 extends AppCompatActivity {
         }
     }
 
-    private void moveToAwardTwo() {
-        Intent intent = new Intent(QActivity2.this, MainActivity.class);
+    private void moveToAwardFour() {
+        Intent intent = new Intent(QActivity4.this, MainActivity.class);
         startActivity(intent);
     }
 }
-

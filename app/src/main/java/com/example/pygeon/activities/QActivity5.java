@@ -12,11 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.pygeon.classes.Question;
 import com.example.pygeon.R;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class QActivity2 extends AppCompatActivity {
+public class QActivity5 extends AppCompatActivity {
+
     //Control System
     TextView tvQuizCounter, tvQuizQuestion, tvQuizStatus;
     Button buttonA, buttonB, buttonC, buttonD, buttonVictory;
@@ -32,14 +32,14 @@ public class QActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_q2);
+        setContentView(R.layout.activity_q5);
 
         //Find view by ID for each TextView
         tvQuizCounter = findViewById(R.id.tvQuizCounter);
         tvQuizQuestion = findViewById(R.id.tvQuizQuestion);
         tvQuizStatus = findViewById(R.id.tvQuizStatus);
 
-        //Find view by ID for each button
+        //Find view by ID for each Button
         buttonA = findViewById(R.id.buttonA);
         buttonB = findViewById(R.id.buttonB);
         buttonC = findViewById(R.id.buttonC);
@@ -47,7 +47,7 @@ public class QActivity2 extends AppCompatActivity {
         buttonVictory = findViewById(R.id.buttonVictory);
 
         //Load questions and answers into the application
-        load(2);
+        load(5);
         index = 0;
 
         loadQuestions(index);
@@ -119,7 +119,7 @@ public class QActivity2 extends AppCompatActivity {
             buttonVictory.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    moveToAwardTwo();
+                    moveToAwardFour();
                 }
             });
         } else {
@@ -242,9 +242,8 @@ public class QActivity2 extends AppCompatActivity {
         }
     }
 
-    private void moveToAwardTwo() {
-        Intent intent = new Intent(QActivity2.this, MainActivity.class);
+    private void moveToAwardFour() {
+        Intent intent = new Intent(QActivity5.this, MainActivity.class);
         startActivity(intent);
     }
 }
-
