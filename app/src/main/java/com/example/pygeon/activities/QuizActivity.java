@@ -1,5 +1,6 @@
 package com.example.pygeon.activities;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +18,7 @@ import java.util.Random;
 public class QuizActivity extends AppCompatActivity {
     //Control System
     TextView tvQuizCounter, tvQuizQuestion, tvQuizStatus;
-    Button buttonA, buttonB, buttonC, buttonD;
+    Button buttonA, buttonB, buttonC, buttonD, buttonVictory;
 
     //Quiz List
     ArrayList<Question> questionList = new ArrayList<>();
@@ -42,6 +43,7 @@ public class QuizActivity extends AppCompatActivity {
         buttonB = findViewById(R.id.buttonB);
         buttonC = findViewById(R.id.buttonC);
         buttonD = findViewById(R.id.buttonD);
+        buttonVictory = findViewById(R.id.buttonVictory);
 
         //Load questions and answers into the application
         load(1);
@@ -112,6 +114,13 @@ public class QuizActivity extends AppCompatActivity {
                     }
                 }
             });
+
+            buttonVictory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    moveToAwardOne();
+                }
+            });
         } else {
             enemyDefeated();
         }
@@ -130,24 +139,27 @@ public class QuizActivity extends AppCompatActivity {
             tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
             tvQuizStatus.setTextColor(Color.parseColor("#3dcc8e"));
             tvQuizStatus.setText("Correct! Enemy took 3 damage.");
+
             enemyHP -= 3;
         }
     }
 
     public void healDamage() {
-        if (enemyHP <= 12) {
-            tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
-            tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
-            tvQuizStatus.setText("Incorrect! Enemy healed 2 damage.");
-            enemyHP += 2;
-        } else if (enemyHP == 15) {
-            tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
-            tvQuizStatus.setText("Incorrect! Enemy is already at max health.");
-        } else {
-            int difference = maxEnemyHP - enemyHP;
-            tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
-            tvQuizStatus.setText("Incorrect! Enemy healed "  + difference + " damage.");
-            enemyHP += difference;
+        if(enemyHP != 0) {
+            if (enemyHP <= 12) {
+                tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
+                tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
+                tvQuizStatus.setText("Incorrect! Enemy healed 2 damage.");
+                enemyHP += 2;
+            } else if (enemyHP == 15) {
+                tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
+                tvQuizStatus.setText("Incorrect! Enemy is already at max health.");
+            } else {
+                int difference = maxEnemyHP - enemyHP;
+                tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
+                tvQuizStatus.setText("Incorrect! Enemy healed " + difference + " damage.");
+                enemyHP += difference;
+            }
         }
     }
 
@@ -159,6 +171,12 @@ public class QuizActivity extends AppCompatActivity {
         /*
          * CODE THAT GETS THE QUIZ TO GO TO THE WIN SCREEN NEEDED HERE
          */
+        tvQuizQuestion.setVisibility(View.INVISIBLE);
+        buttonA.setVisibility(View.INVISIBLE);
+        buttonB.setVisibility(View.INVISIBLE);
+        buttonC.setVisibility(View.INVISIBLE);
+        buttonD.setVisibility(View.INVISIBLE);
+        buttonVictory.setVisibility(View.VISIBLE);
     }
 
     public void load(int i) {
@@ -221,6 +239,10 @@ public class QuizActivity extends AppCompatActivity {
             questionList.add(new Question("Can we track position with a for loop that cycles through objects in a list?", "Yes, always", "Sometimes at random", "Not by itself, but with an incrementing index", "No", "Not by itself, but with an incrementing index"));
             questionList.add(new Question("What is the list in (for book in books)?", "for", "book", "in", "books", "books"));
         }
+    }
 
+    private void moveToAwardOne() {
+        Intent intent = new Intent(QuizActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 }
