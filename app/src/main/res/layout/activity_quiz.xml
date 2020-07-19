@@ -38,6 +38,25 @@
         android:layout_height="wrap_content"
         />
 
+    <!-- Images for the fight -->
+    <ImageView
+        android:id="@+id/fox"
+        android:layout_marginTop="217dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/foxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/tealmino"
+        android:layout_marginTop="217dp"
+        android:layout_marginLeft="262dp"
+        android:src="@drawable/tealminotaur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
     <!-- The dashboard/Where the user should be pressing -->
     <Button
         android:id="@+id/buttonA"
