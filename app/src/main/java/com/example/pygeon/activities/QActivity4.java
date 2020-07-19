@@ -132,7 +132,13 @@ public class QActivity4 extends AppCompatActivity {
         int numElements = questionList.size();
 
         Random r = new Random();
-        return r.nextInt(numElements);
+        index++;
+
+        if (index <= 9) {
+            return r.nextInt(index);
+        } else {
+            return r.nextInt(numElements);
+        }
     }
 
     private void takeDamage() {
