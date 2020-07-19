@@ -23,25 +23,25 @@
             android:id="@+id/tab1L4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tab1" />
+            android:text="Stage 1" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab2L4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tab2" />
+            android:text="Stage 2" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab3L4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tab3" />
+            android:text="Stage 3" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab4L4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tab4" />
+            android:text="Stage 4" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager

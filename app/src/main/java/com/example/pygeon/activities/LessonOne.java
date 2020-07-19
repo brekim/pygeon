@@ -18,7 +18,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class LessonOne extends AppCompatActivity {
 
-    private Button btnQuizOne;
+//    private Button btnQuizOne;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,13 +26,13 @@ public class LessonOne extends AppCompatActivity {
         setContentView(R.layout.activity_lesson_one);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        btnQuizOne = findViewById(R.id.quizButtonOne);
-        btnQuizOne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                moveToQuizActivity();
-            }
-        });
+//        btnQuizOne = findViewById(R.id.quizButtonOne);
+//        btnQuizOne.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                moveToQuizActivity();
+//            }
+//        });
 
         TabLayout tabLayout1 = findViewById(R.id.tabBar1);
         TabItem tab1L1 = findViewById(R.id.tab1L1);
@@ -66,10 +66,10 @@ public class LessonOne extends AppCompatActivity {
         });
     }
 
-    private void moveToQuizActivity() {
-        Intent intent = new Intent(LessonOne.this, QuizActivity.class);
-        startActivity(intent);
-    }
+//    private void moveToQuizActivity() {
+//        Intent intent = new Intent(LessonOne.this, QuizActivity.class);
+//        startActivity(intent);
+//    }
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
         startActivityForResult(myIntent, 0);

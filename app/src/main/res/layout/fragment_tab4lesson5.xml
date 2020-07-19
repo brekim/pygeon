@@ -12,8 +12,8 @@
     <Button
         android:layout_width="346dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="286dp"
         android:background="@drawable/navy_button"
         android:fontFamily="@font/poppinsbold"
         android:text="LET'S DO THIS"
@@ -24,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="286dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="226dp"
         android:text="You are now ready to face the Pygeon! "
         android:textColor="#273A6E" />
 </RelativeLayout>
