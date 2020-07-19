@@ -10,6 +10,7 @@
     <!-- Creating the menu here -->
 
     <Button
+        android:id="@+id/battle_button"
         android:layout_width="346dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
