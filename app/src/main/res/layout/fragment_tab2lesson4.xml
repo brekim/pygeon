@@ -1,14 +1,322 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.tab1lesson1">
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Tab 2 Lesson 4" />
+        android:layout_height="wrap_content"
+        android:background="#FCB5C1"
+        tools:context=".tab2lesson4">
 
-</FrameLayout>
+        <View
+            android:layout_marginTop="1900dp"
+            android:layout_height = "15dp"
+            android:layout_width = "match_parent"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="24dp"
+            android:text="Basic Inbuilt Functions for Lists"
+            android:textColor="#FFF2F4"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="Now that you know what a list is, let's look at some functions for lists! We will be working with this list for the rest of the lesson:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="june_week_one_rainfall = [0.9, 1.0, 1.1, 0.3, 5.0, 5.1, 2.6]"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="363dp"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="The first thing we need to be able to do is access the stuff inside the list. We do that by accessing an index of a list. An index is just a fancy word for location, and it works like this: the first item is at index 0, the second item is at index 1, the third item is at index 2, and so on. Pay special attention to the fact that the index starts at 0, not 1! \n\nIf we want to access an item at a certain index for our list, we type it like this:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="420dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="june_week_one_rainfall[index#]"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="470dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="Let's say we wanted the first item in our list — we would set the index to 0. If we wanted the 6th item, we would set the index to 5. This is what both of those would look like:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="575dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="june_week_one_rainfall[0]\njune_week_one_rainfall[5]"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="645dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="But what if you don't know where your item is? You can use the index() function. This function takes in a value as a parameter, but is called on a list. Let's say you were looking for the day where there was 5.1 inches of rainfall. You would type this as:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="790dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="june_week_one_rainfall.index(5.1)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="840dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="This function would see that the value 5.1 is at index 5, BUT remember, that isn't actually the day of the week! It would be day 6, because the index starts at 0. \n\nIf there was more than one instance of the number 5.1 in the list, the index() function would give you the index of the first place 5.1 comes up. "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1050dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="And what if you want to add an item to the end of a list? Maybe there's a magic eighth day of the week...well, you can use the append() function. This is also called on a list, and takes the value you want to add as a parameter. \n\nLet's say magic day 8 got 3.9 inches of rainfall. You would add it to the list like this: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1255dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="june_week_one_rainfall.append(3.9)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1300dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="This function would automatically add it to the end of the list, which would now look like this: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1385dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="june_week_one_rainfall = [0.9, 1.0, 1.1, 0.3, 5.0, 5.1, 2.6, 3.9]"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1455dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="You can also use the insert() function to add a value to a specific index. This function is also called on a list, but it requires both an index and the new value as parameters. \n\nLet's say magic day is between Tuesday and Wednesday, and it got 4.7 inches of rainfall. You would add it to the list like this: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1640dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="june_week_one_rainfall.insert(2, 4.7)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1685dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less4"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="This function would add it the second index, which is technically the third day — right where we want it! The list would then look like this:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1790dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="june_week_one_rainfall = [0.9, 1.0, 4.7, 1.1, 0.3, 5.0, 5.1, 2.6, 3.9]"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.tab1lesson1">
+    android:background="#F6CF88"
+    tools:context=".fragments.tab4lesson1">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Creating the menu here -->
+
+    <Button
+        android:id="@+id/quizButtonTwo"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/orange_button"
+        android:fontFamily="@font/poppinsbold"
+        android:text="TAKE ME THERE"
+        android:textAllCaps="false"
+        android:textColor="#473005" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Tab 4 Lesson 2" />
-
-</FrameLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="286dp"
+        android:text="Ready to battle? "
+        android:textColor="#473005" />
+</RelativeLayout>

@@ -1,14 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.tab2lesson1">
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Tab 2 Lesson 1" />
+        android:layout_height="wrap_content"
+        android:background="#B8F8F9"
+        tools:context=".tab2lesson1">
 
-</FrameLayout>
+        <View
+            android:layout_marginTop="1490dp"
+            android:layout_height = "15dp"
+            android:layout_width = "match_parent"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="24dp"
+            android:text="Datatypes"
+            android:textColor="#0DA2A6"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less1"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="There are many types of variables in Python. These variables can hold words, numbers, decimals, lists of values, and a lot of other things. \n\nHere are some of the most common datatypes: \n  \t1) Strings. These types of variables contain words and text.  &quot;My aunt Sally&quot; is an example of a string. \n \n \t2) Integers (int): These contain numbers with no decimal points. The number 34 is an example of an integer. \n \n \t3) Double: These contain numbers with decimal points. The number 34.4 is an example of a double. \n \n \t4) Boolean: These are True or False values. \n \n \t5) Lists: These hold multiple values of any datatype (you can even mix them!). We use these to group and organize our numbers/data. [4, 5, &quot;banana&quot;, True] is an example of a list."
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="625dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less1"
+            android:paddingTop="7dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="As you will see later, there are a lot of different things you can do depending on the datatype you have! Here are some basic operations you can do with integers and doubles (numbers): \n \t 1) Add (+) \n \n\t2) Subtract (-) \n \n \t3) Multiply (*) \n \n \t4) Divide (/) \n \nLet's say we have two variables, num_bananas and num_apples. We would make these variables like this:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="970dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="num_bananas = 8 \nnum_apples = 2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1040dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less1"
+            android:paddingTop="7dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="From here, we can use some of our operations on these variables, like this"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1110dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="total = num_bananas + num_apples \n\ndifference = num_bananas - num_apples \n\nproduct = num_bananas * num_apples \n\nquotient = num_bananas / num_apples."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1280dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less1"
+            android:paddingTop="7dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="Our variables are now equal to these values: \n\n \ttotal = 10 \n\n \tdifference = 6 \n\n \tproduct = 16 \n\n \tquotient = 4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

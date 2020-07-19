@@ -1,14 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.tab1lesson1">
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Tab 2 Lesson 5" />
+        android:layout_height="wrap_content"
+        android:background="#A1B1DE"
+        tools:context=".tab1lesson5">
 
-</FrameLayout>
+        <View
+            android:layout_marginTop="1900dp"
+            android:layout_height = "15dp"
+            android:layout_width = "match_parent"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="24dp"
+            android:text="For Loops"
+            android:textColor="#5673C3"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less5"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="For loops are another type of loop we can use to go through the roster (and many other things, too). There are two types of for loops. \n\nThe first is requires you to go through objects in a list. \n\t1) This is one of Python's best features. If you don't care at all about keeping track of location, you can simply go and look at each item, compare it to the value we want, and print something when we find it.These types of for loops look like this:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="for object in list: \n\t\t\t\t *code goes here*"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less5"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="The &quot;object&quot; is just a placeholder name: you can actually call it whatever you want. This type of loop automatically goes through each of the items, and in the code, will refer to whatever item it is checking as the object name. So, you choose a name that makes sense. \n\n For our example, using &quot;student_name&quot; makes a lot of sense. To find the name &quot;Joe&quot; using this type of loop, we would type: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="655dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="for student_name in name_roster: \n\t\t\t\tif(student_name == &quot;Joe&quot;):\n\t\t\t\t\t\t\t\tprint(&quot;Yay I found it!&quot;)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="745dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less5"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="Again, this code is going through each student_name in the name_roster and comparing it to the name &quot;Joe&quot; until it finds the correct name. Then it prints &quot;Yay I found it!&quot;, and the loop breaks. \n\nThe second type of for loop is one that uses a numerical iterator. This means that it keeps adding one to a minimum number until it hits a maximum number, both of which you give as parameters. This type of loop generally looks like this: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1015dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="for i in range(min, max): \n\t\t\t\t *code goes here*"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1090dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less5"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="This type of loop automatically keeps track of a number (we called it i, but you can call it what you want) and adds 1 to it every time the loop runs the code that's inside it. The value of i will start at the minimum value, and 1 will be added until it equals one less than the maximum. This is important: the value of i will NEVER be equal to the maximum. \n\nThese types of loops are really good for going through lists. We can start the value of i at 0, the first index, and set the maximum to the last index + 1 (because we want it to actually reach the last index). We can try this with our roster example: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1420dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="for i in range(0, 5): \n\t\t\t\tif(name_roster[i] == &quot;Joe&quot;):\n\t\t\t\t\t\t\t\tprint(i)\n\t\t\t\t\t\t\t\tprint(&quot;Yay I found it!&quot;)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1530dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less5"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="This loop starts the value of i at 0, the first index. It then checks what name is at index 0, and finds that it is not &quot;Joe&quot; So, it moves on, adding 1 to i until it finds the index where the name &quot;Joe&quot; is located. Once it reaches index 3, it prints the index along with &quot;Yay I found it!&quot; \n\n It is important to pay attention the value of the maximum when we are going through a list. Because the indexes start at 0, the last index is one less than the number of objects in the list. \n\nThere are five names in name_roster, but four indexes. Since we want to check all the indexes (or reach i = 4), we have to make the maximum one more than this, so we pass 5 as the max parameter. "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

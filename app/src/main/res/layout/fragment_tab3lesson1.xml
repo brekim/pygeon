@@ -1,14 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.tab3lesson1">
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Tab 3 Lesson 1" />
+        android:layout_height="wrap_content"
+        android:background="#B8F8F9"
+        tools:context=".tab3lesson1">
 
-</FrameLayout>
+        <View
+            android:layout_marginTop="900dp"
+            android:layout_height = "15dp"
+            android:layout_width = "match_parent"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="24dp"
+            android:text="What is a Function?"
+            android:textColor="#0DA2A6"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less1"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="A function is a block of code that performs a series of steps that we can Python do — we can make Python go through these steps as many times as we want, and we execute these functions using a phrase. \n\nThe most basic example of a built in function is the print() function. It works like this: \n\t 1) We type word &quot;print&quot; and right next to it, a set of parentheses () \n\n\t2) We put a String inside the parentheses. This String is called a parameter. A parameter is a value that the function needs to perform its steps. These parameters can be of any datatype. \n\n In this case, we have a String parameter that Python feeds into the print() function. The print() function will take this String and print it on your computer screen. \n\nThe code looks like this:  "
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="560dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/code_edittext"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="print(&quot;Banana&quot;)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="612dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/round_edittext_less1"
+            android:paddingLeft="14dp"
+            android:paddingTop="7dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="7dp"
+            android:text="For this function, the steps are: \n\t 1) Get the String parameter \n\n\t2) Make the String appear on the screen. \n\nSince print() is a built in function, you won't see the code for the steps, but this makes the code look really clean and very easy to use. \n\nWe will explore more functions later on, but right now, it's time to battle! Go to the next tab to get to the battle screen."
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="14sp" />
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

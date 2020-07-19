@@ -42,7 +42,7 @@
         android:text="Level Three: Control Structures"
         android:textAllCaps="false"
         android:background="@drawable/bandana_button"
-        android:textColor="#f6163b"
+        android:textColor="#AC0722"
     />
 
     <Button
@@ -54,7 +54,7 @@
         android:text="Level Four: Lists"
         android:textAllCaps="false"
         android:background="@drawable/red_button"
-        android:textColor="#f6163b"
+        android:textColor="#AC0722"
     />
 
     <Button

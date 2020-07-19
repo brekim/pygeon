@@ -6,6 +6,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.pygeon.R;
 
@@ -16,11 +18,21 @@ import com.google.android.material.tabs.TabLayout;
 
 public class LessonFour extends AppCompatActivity {
 
+    private Button btnQuizFour;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson_four);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        btnQuizFour = findViewById(R.id.quizButtonFour);
+        btnQuizFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moveToQuizActivity();
+            }
+        });
 
         TabLayout tabLayout4 = findViewById(R.id.tabBar4);
         TabItem tab1L4 = findViewById(R.id.tab1L4);
@@ -53,6 +65,11 @@ public class LessonFour extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void moveToQuizActivity() {
+        Intent intent = new Intent(LessonFour.this, QuizActivity.class);
+        startActivity(intent);
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {

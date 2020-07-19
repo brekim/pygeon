@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8F8F9"
     tools:context=".fragments.tab4lesson1">
 
     <!-- Creating the menu here -->
@@ -16,9 +16,17 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@drawable/teal_button"
-        android:text="Level One: Variables"
-        android:textAllCaps="false"
-        android:textColor="#0da2a6"
         android:fontFamily="@font/poppinsbold"
-    />
+        android:text="TAKE ME THERE"
+        android:textAllCaps="false"
+        android:textColor="#0da2a6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="286dp"
+        android:text="Ready to battle? "
+        android:textColor="#064547" />
 </RelativeLayout>
