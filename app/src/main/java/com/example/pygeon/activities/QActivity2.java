@@ -15,7 +15,7 @@ import com.example.pygeon.R;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class QuizActivity extends AppCompatActivity {
+public class QActivity2 extends AppCompatActivity {
     //Control System
     TextView tvQuizCounter, tvQuizQuestion, tvQuizStatus;
     Button buttonA, buttonB, buttonC, buttonD, buttonVictory;
@@ -31,14 +31,14 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_q2);
 
         //Find view by ID for each TextView
         tvQuizCounter = findViewById(R.id.tvQuizCounter);
-        tvQuizQuestion = findViewById(R.id.tvQuizQuestion);
+        tvQuizQuestion = findViewById((R.id.tvQuizQuestion));
         tvQuizStatus = findViewById(R.id.tvQuizStatus);
 
-        //Find view by ID for each Button
+        //Find view by ID for each button
         buttonA = findViewById(R.id.buttonA);
         buttonB = findViewById(R.id.buttonB);
         buttonC = findViewById(R.id.buttonC);
@@ -46,7 +46,7 @@ public class QuizActivity extends AppCompatActivity {
         buttonVictory = findViewById(R.id.buttonVictory);
 
         //Load questions and answers into the application
-        load(1);
+        load(2);
         index = 0;
 
         loadQuestions(index);
@@ -118,7 +118,7 @@ public class QuizActivity extends AppCompatActivity {
             buttonVictory.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    moveToAwardOne();
+                    moveToAwardTwo();
                 }
             });
         } else {
@@ -145,7 +145,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void healDamage() {
-        if(enemyHP != 0) {
+        if (enemyHP != 0) {
             if (enemyHP <= 12) {
                 tvQuizCounter.setText("Minotaur: " + enemyHP + "/" + maxEnemyHP + " HP");
                 tvQuizStatus.setTextColor(Color.parseColor("#f44336"));
@@ -183,7 +183,7 @@ public class QuizActivity extends AppCompatActivity {
         // Level One: Variables
         questionList.clear();
 
-        if(i == 1) {
+        if (i == 1) {
             questionList.add(new Question("What type is the variable answer? answer = \"B\"", "String", "int", "double", "boolean", "String"));
             questionList.add(new Question("What type is the variable num_cats? num_cats = 4", "String", "int", "double", "boolean", "int"));
             questionList.add(new Question("What type is the variable cash? cash = 4.35", "String", "int", "double", "boolean", "double"));
@@ -194,7 +194,7 @@ public class QuizActivity extends AppCompatActivity {
             questionList.add(new Question("What is the parameter in this print statement? print(\"Cake\")", "\"Cake\"", "print", "(\"\")", "Cake", "\"Cake\""));
             questionList.add(new Question("What type is the variable fruit? fruit = [\"Apple\", \"Orange\", \"Banana\"]", "int", "double", "list", "boolean", "list"));
             questionList.add(new Question("What is the type of the parameter? wait(\"200\")", "String", "int", "double", "boolean", "String"));
-        } else if(i == 2) {
+        } else if (i == 2) {
             questionList.add(new Question("Which variable is correctly defined?", "buttonPressed.True", "True buttonPressed", "buttonPressed = True", "True = buttonPressed", "buttonPressed = True"));
             questionList.add(new Question("Which comment is correctly defined?", "# This is a comment", "// This is a comment", "\"This is a comment\"", "This is a comment", "# This is a comment"));
             questionList.add(new Question("What is the name of this variable? age = 14", "age = 14", "age", "age14", "14", "age"));
@@ -205,7 +205,7 @@ public class QuizActivity extends AppCompatActivity {
             questionList.add(new Question("What is a parameter?", "A unit of measurement", "A given value to a function", "A data type", "A function", "A given value to a function"));
             questionList.add(new Question("What is the proper syntax to call the print function?", "print()", "print{}", "print[]", "print", "print()"));
             questionList.add(new Question("Say name() returns a String value. What line of code sets name() to a variable x?", "x.name()", "x = name()", "name(x)", "x = name", "x = name()"));
-        } else if(i == 3) {
+        } else if (i == 3) {
             questionList.add(new Question("What data type can be True or False?", "String", "int", "double", "boolean", "boolean"));
             questionList.add(new Question("Which pair contains both boolean operators?", "True, or", "and, False", "True, False", "and, or", "and, or"));
             questionList.add(new Question("Which pair contains both boolean values?", "True, or", "and, False", "True, False", "and, or", "True, False"));
@@ -216,7 +216,7 @@ public class QuizActivity extends AppCompatActivity {
             questionList.add(new Question("What will print to the console from if num_cakes == 5: num_cakes == 6 elif num_cakes == 6: print(“Six cakes”), when num_cakes = 5?", "Six cakes", "True", "False", "Nothing will print", "Nothing will print"));
             questionList.add(new Question("What will print to the console from if isRed: print(“It’s red”) else: print(“It’s not red”), when isRed = True?", "It's red", "It's not red", "\"It's red\"", "\"It's not red\"", "It's red"));
             questionList.add(new Question("What will print to the console from if isRed: print(“It’s red”) else: print(“It’s not red”), when isRed = False?", "It's red", "It's not red", "\"It's red\"", "\"It's not red\"", "It's not red"));
-        } else if(i == 4) {
+        } else if (i == 4) {
             questionList.add(new Question("Which points list is properly defined?", "points = {33.3, 45.6, 35.5, 0.14}", "points = 33.3, 45.6, 35.5, 0.49", "points = [23.3, 41.5, 6.53, 0.84]", "points [23.3, 41.5, 6.53, 0.84]", "points = [23.3, 41.5, 6.53, 0.84]"));
             questionList.add(new Question("Select the first element of prices = [23.3, 41.5, 6.53, 0.84]", "prices[0]", "prices[1]", "prices[2]", "prices[23.3]", "prices[0]"));
             questionList.add(new Question("Select the second element of prices = [23.3, 41.5, 6.53, 0.84]", "prices[0]", "prices[1]", "prices[2]", "prices[23.3]", "prices[1]"));
@@ -227,7 +227,7 @@ public class QuizActivity extends AppCompatActivity {
             questionList.add(new Question("How would you remove the 2nd element, the number 34, of the list numbers?", "numbers.pop(1)", "numbers.pop(2)", "numbers.pop(34)", "numbers.remove(34)", "numbers.pop(1)"));
             questionList.add(new Question("How would you insert the string “Gold” at index 2 in the list chemistry?", "chemistry.insert(1, “Gold”)", "chemistry.insert(2, “Gold”)", "chemistry.insert(“Gold”, 1)", "chemistry.insert(“Gold”, 2)", "chemistry.insert(2, “Gold”)"));
             questionList.add(new Question("In the list points [23.3, 41.5, 6.53, 0.84], what is the position and index of 0.84?", "Position: 2, Index: 2", "Position: 3, Index: 3", "Position: 2, Index: 3", "Position: 3, Index: 2", "Position: 3, Index: 2"));
-        } else if(i == 5) {
+        } else if (i == 5) {
             questionList.add(new Question("What is the object in (for book in books)?", "for", "book", "in", "books", "book"));
             questionList.add(new Question("When will a while loop stop?", "When its condition is True", "When its condition is False", "Never, a while loop runs constantly", "None of the above", "When its condition is False"));
             questionList.add(new Question("How do you loop through a 5-element list numbers by object?", "for numbers", "for number in numbers", "for numbers in numbers", "for i in range(0, 5)", "for number in numbers"));
@@ -241,9 +241,9 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-    private void moveToAwardOne() {
-        Intent intent = new Intent(QuizActivity.this, MainActivity.class);
+    private void moveToAwardTwo() {
+        Intent intent = new Intent(QActivity2.this, MainActivity.class);
         startActivity(intent);
     }
-
 }
+

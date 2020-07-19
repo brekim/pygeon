@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
     //For beta testing... temporarily goes to the quiz
     private void moveToCredits() {
-        Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+        Intent intent = new Intent(MainActivity.this, QActivity2.class);
         startActivity(intent);
     }
 }
