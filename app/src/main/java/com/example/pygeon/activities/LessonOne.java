@@ -70,6 +70,7 @@ public class LessonOne extends AppCompatActivity {
 //        Intent intent = new Intent(LessonOne.this, QuizActivity.class);
 //        startActivity(intent);
 //    }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
         startActivityForResult(myIntent, 0);

@@ -26,7 +26,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="24dp"
             android:text="What is a List?"
-            android:textColor="#FFF2F4"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
         <TextView
@@ -54,7 +54,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="210dp"
             android:text="List Properties and Syntax"
-            android:textColor="#FFF2F4"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
         <TextView

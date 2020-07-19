@@ -11,6 +11,7 @@
 
     <Button
         android:id="@+id/quizButtonOne"
+        android:onClick="buttonClick"
         android:layout_width="346dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
