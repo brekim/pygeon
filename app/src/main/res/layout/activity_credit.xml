@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".activities.QActivity2">
+
+    <ImageView
+        android:id="@+id/creditsnew"
+        android:layout_width="305dp"
+        android:layout_height="295dp"
+        android:src="@drawable/creditsnew"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/meettheteam"
+        android:text="Meet the Team"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="277dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:text="We are a group of highschool programmers from San Diego, California. We are passionate about the future of education and the role technology can play in that sector. Early coding materials we engaged with lacked flavor and fun. In response, we made Pygeon, an RPG game that teaches kids how to code using battles and quests, to get kids who are intimidated by esoteric texts into coding."
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="337dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
