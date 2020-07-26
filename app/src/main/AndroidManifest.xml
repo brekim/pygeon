@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activities.VictoryScreen"></activity>
+        <activity android:name=".activities.CreditActivity"></activity>
         <activity android:name=".activities.LessonOne" />
         <activity android:name=".activities.LessonFive" />
         <activity android:name=".activities.LessonFour" />

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/back"
+    android:background="@drawable/back_screen"
     tools:context=".activities.MainActivity">
 
     <!-- Creating the menu here -->
