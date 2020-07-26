@@ -16,6 +16,10 @@
         <activity android:name=".activities.LessonFour" />
         <activity android:name=".activities.LessonThree" />
         <activity android:name=".activities.LessonTwo" />
+        <activity android:name=".activities.QActivity2" />
+        <activity android:name=".activities.QActivity3" />
+        <activity android:name=".activities.QActivity4" />
+        <activity android:name=".activities.QActivity5" />
         <activity android:name=".activities.QuizActivity" />
         <activity android:name=".activities.MainActivity">
             <intent-filter>
